@@ -1,7 +1,30 @@
-<div>
-    <h3>Payment Confirmation</h3>
-    <p>Flight: {{ $flight_name }}</p>
-    <p>Amount: ${{ $amount }}</p>
+<div class="container mt-8 p-6 bg-white rounded-lg shadow-lg">
+    <h3 class="text-2xl font-semibold text-center mb-4">Payment Confirmation</h3>
 
-    <button wire:click="processPayment" class="btn btn-success">Confirm Payment</button>
+    <div class="space-y-4">
+        <p class="text-lg font-medium">
+            <span class="font-semibold">Flight:</span> {{ $flight_name }}
+        </p>
+        <p class="text-lg font-medium">
+            <span class="font-semibold">Amount:</span> ${{ $amount }}
+        </p>
+        <p class="text-lg font-medium">
+            <span class="font-semibold">Passenger:</span> {{ $passenger_name }}
+        </p>
+        <p class="text-lg font-medium">
+            <span class="font-semibold">Age:</span> {{ $age }}
+        </p>
+        <p class="text-lg font-medium">
+            <span class="font-semibold">Email:</span> {{ $email }}
+        </p>
+        <p class="text-lg font-medium">
+            <span class="font-semibold">Contact:</span> {{ $contact }}
+        </p>
+    </div>
+
+    <div class="mt-6 text-center">
+        <button wire:click="processPayment" class="px-6 py-3 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
+            Confirm Payment
+        </button>
+    </div>
 </div>

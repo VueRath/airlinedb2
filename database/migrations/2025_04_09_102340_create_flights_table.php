@@ -16,6 +16,10 @@ return new class extends Migration
             $table->string('flight_name');
             $table->date('departure_date');
             $table->string('payment_status')->default('pending');
+            $table->string('passenger_name');
+            $table->integer('age');
+            $table->string('email');
+            $table->string('contact');
             $table->timestamps();
         });
     }

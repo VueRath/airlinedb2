@@ -22,9 +22,9 @@
                     <x-nav-link :href="route('flights.view')" :active="request()->routeIs('flights.view')">
                         {{ __('View Booked Flights') }}
                     </x-nav-link>
-                    <x-nav-link :href="route('flights.payment', ['id' => 1])" :active="request()->routeIs('flights.payment')">
+                    {{-- <x-nav-link :href="route('flights.payment', ['id' => 1])" :active="request()->routeIs('flights.payment')">
                         {{ __('Make Payment') }}
-                    </x-nav-link>
+                    </x-nav-link> --}}
                 </div>
             </div>
 
