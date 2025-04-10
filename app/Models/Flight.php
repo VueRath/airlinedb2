@@ -11,7 +11,9 @@ class Flight extends Model
 
 
     protected $fillable = [
-        'flight_name',
+        'accomodation',
+        'origin',
+        'destination',
         'departure_date',
         'payment_status',
         'passenger_name',
@@ -19,4 +21,16 @@ class Flight extends Model
         'email',
         'contact',
     ];
+
+    protected static function boot()
+{
+    parent::boot();
+
+    static::creating(function ($flight) {
+        if (is_null($flight->amount)) {
+            $flight->amount = rand(100, 1000);
+        }
+    });
+}
+
 }

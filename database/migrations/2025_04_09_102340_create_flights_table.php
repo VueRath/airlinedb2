@@ -13,8 +13,11 @@ return new class extends Migration
     {
         Schema::create('flights', function (Blueprint $table) {
             $table->id();
-            $table->string('flight_name');
+            $table->string('accomodation')->default('Economy');
+            $table->string('origin')->default('Philippines');
+            // $table->string('destination');
             $table->date('departure_date');
+            $table->decimal('amount', 8, 2)->nullable();
             $table->string('payment_status')->default('pending');
             $table->string('passenger_name');
             $table->integer('age');

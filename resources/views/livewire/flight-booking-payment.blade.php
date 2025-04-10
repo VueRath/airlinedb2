@@ -3,8 +3,14 @@
 
     <div class="space-y-4">
         <p class="text-lg font-medium">
-            <span class="font-semibold">Flight:</span> {{ $flight_name }}
+            <span class="font-semibold">Accomodation:</span> {{ $accomodation }}
         </p>
+        <p class="text-lg font-medium">
+            <span class="font-semibold">Origin:</span> {{ $origin }}
+        </p>
+        {{-- <p class="text-lg font-medium">
+            <span class="font-semibold">Destination:</span> {{ $destination }}
+        </p> --}}
         <p class="text-lg font-medium">
             <span class="font-semibold">Amount:</span> ${{ $amount }}
         </p>

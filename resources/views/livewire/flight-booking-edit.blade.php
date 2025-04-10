@@ -1,10 +1,20 @@
 <div class="container mx-auto mt-8 p-4">
     <h3 class="text-center text-2xl font-bold mb-6">Update Flight Details</h3>
     <form wire:submit.prevent="updateFlight" class="bg-white p-6 rounded-lg shadow-lg">
-        <div class="mb-4">
-            <label for="flight_name" class="block text-sm font-semibold text-gray-700">Flight Name</label>
-            <input type="text" id="flight_name" wire:model="flight_name" class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required placeholder="Enter flight name">
-        </div>
+        {{-- <div class="mb-4">
+            <label for="accomodation" class="block text-sm font-semibold text-gray-700">Accommodation</label>
+            <input type="text" id="accomodation" wire:model="accomodation" class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required placeholder="Enter accomodation">
+        </div> --}}
+
+        {{-- <div class="mb-4">
+            <label for="origin" class="block text-sm font-semibold text-gray-700">Origin</label>
+            <input type="text" id="origin" wire:model="origin" class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required placeholder="Enter origin">
+        </div> --}}
+
+        {{-- <div class="mb-4">
+            <label for="destination" class="block text-sm font-semibold text-gray-700">Destination</label>
+            <input type="text" id="destination" wire:model="destination" class="w-full px-4 py-2 mt-1 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" required placeholder="Enter destination">
+        </div> --}}
 
         <div class="mb-4">
             <label for="departure_date" class="block text-sm font-semibold text-gray-700">Departure Date</label>

@@ -10,12 +10,15 @@ class FlightBookingCreate extends Component
 {
 
     #[Layout('layouts.app')]
-    public $flight_name, $departure_date, $passenger_name, $age, $email, $contact;
+    public $accomodation, $origin, $destination, $departure_date, $passenger_name, $age, $email, $contact, $amount;
 
     public function bookFlight()
     {
+
         Flight::create([
-            'flight_name' => $this->flight_name,
+            'accomodation' => $this->accomodation ?? 'Economy',
+            'origin' => $this->origin ?? 'Philippines',
+            // 'destination' => $this->destination,
             'departure_date' => $this->departure_date,
             'payment_status' => 'pending',
             'passenger_name' => $this->passenger_name,
