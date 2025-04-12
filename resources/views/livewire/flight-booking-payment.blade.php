@@ -28,6 +28,16 @@
         </p>
     </div>
 
+    <div class="text-left">
+        <label for="payment_method" class="block text-sm font-medium text-gray-700 mb-1">Payment Method</label>
+        <select id="payment_method" wire:model="payment_method" class="w-full border rounded p-2 mb-4">
+            <option value="">-- Select Payment Method --</option>
+            <option value="card">Card</option>
+            <option value="gcash">GCash</option>
+            <option value="paypal">PayPal</option>
+        </select>
+    </div>
+
     <div class="mt-6 text-center">
         <button wire:click="processPayment" class="px-6 py-3 bg-green-500 text-white font-semibold rounded-md shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50">
             Confirm Payment
