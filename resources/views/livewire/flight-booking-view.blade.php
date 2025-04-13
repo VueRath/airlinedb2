@@ -37,12 +37,12 @@
                         <td class="px-4 py-2 text-sm text-gray-700 text-center space-y-1">
                             <button wire:click="edit({{ $flight->id }})" class="w-full bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Edit</button>
                             <button wire:click="delete({{ $flight->id }})" class="w-full bg-red-500 text-white px-3 py-1 rounded-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-red-500">Delete</button>
-                            @if($flight->status == 'pending')
+                            @if($flight->payment_status == 'pending')
                             <button onclick="window.location.href='{{ route('flights.payment', $flight->id) }}'"
                                 class="w-full bg-green-500 text-white px-3 py-1 rounded-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500">
                                 Proceed To Payment
                             </button>
-                             @endif
+                        @endif
                         </td>
                     </tr>
                 @endforeach
