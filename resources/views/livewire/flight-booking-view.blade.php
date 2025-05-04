@@ -1,5 +1,12 @@
 <div class="container mx-auto mt-8 p-4">
     <h3 class="text-center text-2xl font-bold mb-6">Booked Flights</h3>
+    <div class="flex justify-end mb-4">
+        <button wire:click="exportDoc"
+            class="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-500 text-white px-5 py-2 rounded-lg hover:from-blue-700 hover:to-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all">
+            Export Word Report
+        </button>
+    </div>
+
     <div class="overflow-x-auto shadow-lg rounded-lg bg-white p-4">
         <table class="min-w-full table-auto">
             <thead>
